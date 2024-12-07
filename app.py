@@ -44,6 +44,9 @@ def get_questions():
     return jsonify(data)
 
 
-# Only for development environment
+# For development environment
 # if __name__ == "__main__":
 #     app.run(debug=True, host="0.0.0.0")
+
+# For production
+app.run()
