@@ -49,4 +49,5 @@ def get_questions():
 #     app.run(debug=True, host="0.0.0.0")
 
 # For production
-app.run()
+if __name__ == "__main__":
+    app.run()
