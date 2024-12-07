@@ -1,0 +1,35 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Test files
+tests/
+
+# Build files
+build/
+dist/
+*.egg-info
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.map
+
+# Local configuration files
+*.local
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}CodeBank{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>A centralized C++ Programming CodeBank</h1>
+    <p>
+        CodeBank is a platform to help beginners learn C++ by providing a library of solved problems. It's a centralized
+        place to learn and practice C++ programming. Currently, it contains a collection of solved problems.
+    </p>
+
+    <div class="links">
+        <a class="questions-link" href="{{ url_for('questions') }}" role="button">See Questions</a>
+        <a class="github-link" href="https://github.com" role="button" target="_blank">Access on Github &rarr;</a>
+    </div>
+</div>
+
+{% endblock %}

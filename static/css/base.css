@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(5, 5, 6);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 28px;
+  user-select: none;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+}
+
+header .logo span {
+  font-family: monospace !important;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+header nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: rgb(205, 205, 205);
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+.active-link {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.material-symbols-outlined {
+  font-size: 1.3rem;
+}
+
+.side-menu {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  display: none;
+}
+
+.side-menu span {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nav-visible {
+  max-height: fit-content;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .side-menu {
+    display: block;
+  }
+  header {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 24px;
+    height: auto;
+  }
+
+  header nav {
+    opacity: 0;
+    transform: translateY(-100%);
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(27, 27, 27);
+    transition: all 0.3s ease;
+  }
+
+  header .logo span {
+    font-size: 1rem;
+  }
+
+  header nav ul {
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.1rem;
+  }
+}

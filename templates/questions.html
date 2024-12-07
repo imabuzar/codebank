@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Problem Questions | CodeBank{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/questions.css') }}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <h2>C++ Problem Questions</h2>
+    <div class="loading">Please wait...</div>
+    <div class="questions"></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='scripts/questions.js') }}"></script>
+{% endblock %}

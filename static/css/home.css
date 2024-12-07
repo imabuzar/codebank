@@ -1,0 +1,88 @@
+.container {
+  max-width: 720px;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgb(229, 238, 237);
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-size: 1.1rem;
+  color: rgb(146, 165, 169);
+  padding: 4px 32px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.links a {
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.questions-link {
+  background: white;
+  color: black;
+  font-size: 1.15rem;
+}
+
+.questions-link:hover {
+  background: rgb(216, 240, 244);
+}
+
+.github-link {
+  color: rgb(213, 213, 213);
+  font-size: 1.1rem;
+}
+
+.github-link:hover {
+  color: white;
+  background: rgb(32, 32, 32);
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 90%;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .container h1 {
+    font-size: 2.2rem;
+  }
+
+  .container p {
+    padding: 0;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links a {
+    padding: 12px 32px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .questions-link {
+    font-size: 1.1rem;
+  }
+
+  .github-link {
+    font-size: 1.06rem;
+  }
+}
